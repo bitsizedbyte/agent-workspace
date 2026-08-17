@@ -16,9 +16,10 @@ the output is pointers (`path:line`, one-line descriptions), never pasted
 code or file contents.
 
 Root `codemap.md` stays under ~150 lines. If a module is complex enough to
-need more than a one-line entry, give it its own `modules/<name>.md` and link
-it in — generate that file lazily, only when the module is actually relevant
-to the work at hand, not preemptively for the whole tree.
+need more than a one-line entry, give it its own file under
+`agent-memory/code-deepdives/<project>/<name>.md` and link it in from the
+codemap — generate that file lazily, only when the module is actually
+relevant to the work at hand, not preemptively for the whole tree.
 
 Flag anything you're unsure about under "Open questions" rather than guessing
 at intent from code alone.

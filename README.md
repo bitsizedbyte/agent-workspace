@@ -11,7 +11,7 @@ expected at `~/agent-memory`).
 agents/       Role definitions (researcher, feature-implementer, tester,
               qa-bot, distiller, codebase-mapper) — see references/model-tiering.md
               for why each is tiered the way it is.
-skills/       Claude Code skills: memory-search, run-workflow.
+skills/       Claude Code skills: memory-search, run-workflow, token-estimate.
 workflows/    Multi-stage processes that chain agents together, with
               explicit checkpoints where a human should confirm before
               continuing.

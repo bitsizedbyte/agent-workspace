@@ -14,10 +14,17 @@ check explicitly:
    everything else.
 2. If the task touches a specific project, check whether
    `agent-memory/projects/<name>/codemap.md` and `decisions.md` exist before
-   re-exploring the codebase from scratch.
+   re-exploring the codebase from scratch. If the codemap links to a deep-dive
+   in `agent-memory/code-deepdives/<name>/`, read that before re-investigating
+   the module yourself.
 3. If the task touches how to approach the work (not what to build), check
    `agent-memory/feedback/` for a relevant theme file.
-4. Grep across the whole vault for a keyword if index.md's links don't
+4. If the task involves external documentation (an API, a library, a vendor
+   doc), check `agent-memory/docs/` before re-reading and re-summarizing it
+   from scratch.
+5. If the task involves team process, a past work item, or something that
+   may have come up in a meeting, check `agent-memory/team/`.
+6. Grep across the whole vault for a keyword if index.md's links don't
    obviously cover it — the index is a map, not a search index:
    `grep -ril "<keyword>" ~/agent-memory`
 
